@@ -1,0 +1,82 @@
+@import '../../sass/utilities/variables';
+@import '../../sass/utilities/mixins';
+
+.footer {
+  background-color: $black;
+  color: $gray;
+
+  a {
+    color: $gray;
+    @include transition-easeinout(0.25s);
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .footer-top {
+    padding: 0.7rem 0;
+    @include flex(space-between, center, row);
+
+    @include respond-to('small') {
+      @include flex(inherit, flex-start, column, 0.5rem);
+    }
+
+    .languages {
+      font-size: 0.85rem;
+      @include flex(inherit, center, row, 1rem);
+      @include transition-easeinout(0.25s);
+
+      .language-item {
+        color: $gray;
+
+        &:hover {
+          color: $white;
+        }
+
+        &.active {
+          color: $light-purple;
+        }
+      }
+    }
+
+    .socials {
+      @include flex(inherit, center, row, 1rem);
+
+      .social-item {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .footer-middle {
+    background-color: rgba(255, 255, 255, 0.13);
+    padding: 0.7rem 1rem;
+
+    .footer-links {
+      @include text-uppercase(0.9rem, 400);
+      @include flex(center, center, row);
+
+      @include respond-to('small') {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+
+      .footer-link:not(:last-child) {
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 1px;
+          height: 12px;
+          margin: 0 1rem;
+          background-color: $gray;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 0.8rem 1rem;
+    font-size: 0.85rem;
+  }
+}

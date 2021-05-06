@@ -2,6 +2,8 @@
   display: inline-block;
   background-color: $white;
   border: 3px solid $purple;
+  padding: 5px;
+  @include square(60px, 50%);
 
   &.menu-logo {
     padding: 3px;
