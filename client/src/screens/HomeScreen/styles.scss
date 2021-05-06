@@ -1,0 +1,86 @@
+@import '../../sass/utilities/variables';
+@import '../../sass/utilities/mixins';
+
+.hero {
+  .hero-img {
+    position: relative;
+    z-index: 1;
+    padding: 1rem 1.5rem;
+    background: url('../../assets/hero.png') no-repeat center center / cover;
+    height: 60vh;
+
+    .hero-text {
+      position: absolute;
+      width: 80%;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      @include transform-translate(-50%, -50%);
+
+      p {
+        font-size: 1.3rem;
+        color: $white;
+      }
+    }
+  }
+
+  .hero-genres {
+    background-color: $black;
+    padding: 0 1rem;
+
+    .genre-list {
+      white-space: nowrap;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+
+      .genre-item {
+        display: inline-block;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.13);
+        padding: 1rem;
+        cursor: pointer;
+        @include square(140px, 12px);
+
+        .genre-content {
+          @include flex(center, center, column, 1rem);
+
+          .genre-img {
+            padding-bottom: 0.5rem;
+            @include square(58px);
+          }
+
+          .genre-text {
+            color: $white;
+            @include transition-easeinout(0.25s);
+            @include text-capitalize(0.85rem, 600);
+          }
+        }
+
+        &:not(:last-of-type) {
+          margin-right: 1rem;
+        }
+
+        &:hover {
+          .genre-text {
+            color: $light-purple;
+          }
+        }
+      }
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 6px;
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $gray;
+        border-radius: 7px;
+
+        &:hover {
+          background-color: $dark-gray;
+        }
+      }
+    }
+  }
+}
