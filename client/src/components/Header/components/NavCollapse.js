@@ -8,13 +8,12 @@ const NavCollapse = ({ isCollapse, navbarItems }) => {
         {navbarItems.map((item, index) => {
           const { label, path } = item;
           return (
-            <li>
+            <li key={index}>
               <NavLink
                 exact
                 to={path}
                 className='menu-link'
                 activeClassName='active'
-                key={index}
               >
                 {label}
               </NavLink>

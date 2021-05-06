@@ -9,16 +9,91 @@
   padding-top: 5px;
   background: black;
 
-  .menu-right {
-    @include flex(inherit, center, row, 3rem);
+  .navbar {
+    .menu-right {
+      @include flex(inherit, center, row, 3rem);
 
-    .main-menu {
-      @include flex(inherit, center, row, 1.5rem);
+      .main-menu {
+        @include flex(inherit, center, row, 1.5rem);
+
+        .submenu {
+          position: relative;
+
+          .submenu-content {
+            position: absolute;
+            left: -50%;
+            top: 40px;
+            width: 600px;
+            z-index: 99;
+            background-color: $white;
+            padding: 1rem 1.5rem;
+            @include hidden;
+            @include transform-translateY(-0.5rem);
+            @include transition-easeinout(0.25s);
+            @include box-shadow(0, 10px);
+
+            h1 {
+              @include text-uppercase(0.9rem, 600);
+            }
+
+            .submenu-item {
+              display: block;
+              padding-bottom: 0.3rem;
+              @include transition-easeinout(0.25s);
+
+              &:hover {
+                color: $light-purple;
+              }
+            }
+
+            .menu-collection {
+              .menu-collection-item {
+                -webkit-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 0px 6px rgba(0, 0, 0, 0.3);
+
+                p {
+                  font-size: 0.9rem;
+                  font-weight: 600;
+                  padding: 3px 8px;
+                }
+
+                &:hover {
+                  -webkit-filter: brightness(110%);
+                  filter: brightness(110%);
+                }
+              }
+            }
+
+            &:after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 10%;
+              @include border-top(8px, transparent);
+              @include border-bottom(8px, $white);
+              @include border-left(8px, transparent);
+              @include border-right(8px, transparent);
+              @include transform-translate(-50%, -1rem);
+            }
+          }
+
+          &:hover {
+            .menu-link {
+              color: $white;
+            }
+
+            .submenu-content {
+              @include visible;
+              @include transform-translateY(0);
+            }
+          }
+        }
+      }
     }
-  }
 
-  .menu-tray {
-    @include flex(inherit, center, row, 1.2rem);
+    .menu-tray {
+      @include flex(inherit, center, row, 1.2rem);
+    }
   }
 
   .menu-link {
@@ -44,7 +119,7 @@
     }
 
     &.active {
-      color: $light-purple;
+      color: $light-purple !important;
 
       &:hover {
         opacity: 0.8;
