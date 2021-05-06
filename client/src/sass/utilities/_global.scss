@@ -1,0 +1,14 @@
+.logo {
+  display: inline-block;
+  background-color: $white;
+  border: 3px solid $purple;
+
+  &.menu-logo {
+    padding: 3px;
+    @include square(40px, 50%);
+  }
+}
+
+.main-content {
+  padding-top: 63px;
+}

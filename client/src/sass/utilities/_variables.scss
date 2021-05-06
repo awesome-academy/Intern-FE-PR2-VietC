@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+$white: #ffffff;
+$black: #111111;
+$gray: #cccccc;
+$light-gray: #f7f7f7;
+$dark-gray: #818181;
+$blue: #27acfa;
+$brown: #998273;
+$pink: #f6608a;
+$purple: #933176;
+$light-purple: #d78de5;
+$green: #5c911c;
+$light-green: #83cf2b;
+$orange: #ec7429;
+$red: #c30100;
+$yellow: #d9b400;
+$beige: #e0a887;
+$primary-font-family: 'Lato', sans-serif;
+$breakpoints: (
+  'extra-large': (
+    max-width: 1199px,
+  ),
+  'large': (
+    max-width: 991px,
+  ),
+  'medium': (
+    max-width: 767px,
+  ),
+  'small': (
+    max-width: 575px,
+  ),
+  'extra-small': (
+    max-width: 399px,
+  ),
+);
