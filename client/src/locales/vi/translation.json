@@ -6,6 +6,7 @@
   "support": "Hỗ trợ",
   "allCategories": "Tất cả thể loại",
   "categories": {
+    "allGames": "Tất cả trò chơi",
     "action": "Hành động",
     "adventure": "Phiêu lưu",
     "indie": "Độc lập",
@@ -14,6 +15,52 @@
     "simulation": "Mô phỏng",
     "sportsracing": "Thể thao & Đua xe",
     "strategy": "Chiến lược"
+  },
+  "searchFor": "Tìm kiếm",
+  "filters": {
+    "filter": "Bộ lọc",
+    "price": {
+      "price": "Giá tiền",
+      "u5": "Dưới $5",
+      "u15": "Dưới $15",
+      "u25": "Dưới $25",
+      "u50": "Dưới $50",
+      "a50": "$50+",
+      "discounted": "Giảm giá"
+    },
+    "system": {
+      "system": "Hệ điều hành",
+      "windows": "Hệ điều hành Windows",
+      "mac": "Hệ điều hành MacOS",
+      "linux": "Hệ điều hành Linux"
+    },
+    "features": {
+      "features": "Tính năng",
+      "single": "Chơi đơn",
+      "multi": "Nhiều người chơi",
+      "atmospheric": "Khí quyển",
+      "full_controller": "Hỗ trợ đầy đủ bộ điều khiển",
+      "great_soundtrack": "Nhạc phim tuyệt vời",
+      "coop": "Co-op",
+      "open_world": "Thế giới mở",
+      "sandbox": "Sandbox",
+      "story_rich": "Cốt truyện hay",
+      "scifi": "Khoa học viễn tưởng",
+      "fps": "FPS",
+      "horror": "Kinh dị",
+      "2d": "2D",
+      "partial_support": "Hỗ trợ một phần bộ điều khiển",
+      "turn_based": "Đánh theo lượt"
+    }
+  },
+  "sorts": {
+    "sortBy": "Sắp xếp theo:",
+    "dateAdded": "Ngày thêm",
+    "alphabetically": "Thứ tự bảng chữ cái",
+    "bestSelling": "Bán chạy nhất",
+    "userRating": "Đánh giá của người dùng",
+    "ascending": "Giá tăng dần",
+    "descending": "Giá giảm dần"
   },
   "browseAllGames": "Khám phá tất cả trò chơi",
   "allGamesForWindows": "Tất cả game dành cho Windows",

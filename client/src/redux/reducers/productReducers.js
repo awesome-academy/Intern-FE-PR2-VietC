@@ -9,9 +9,9 @@ export const productListReducer = (state = { products: [] }, action) => {
     case PRODUCT_LIST_REQUEST:
       return { pending: true, products: [] };
     case PRODUCT_LIST_SUCCESS:
-      return { loading: false, products: action.payload };
+      return { pending: false, products: action.payload };
     case PRODUCT_LIST_FAILURE:
-      return { loading: false, error: action.payload };
+      return { pending: false, error: action.payload };
     default:
       return state;
   }
