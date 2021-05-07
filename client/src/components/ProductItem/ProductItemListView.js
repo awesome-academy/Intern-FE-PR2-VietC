@@ -3,11 +3,14 @@ import './styles.scss';
 import { Link } from 'react-router-dom';
 
 const ProductItemListView = ({ product }) => {
-  const { image, name, newPrice, oldPrice } = product;
+  const { _id, slug, image, name, newPrice, oldPrice } = product;
 
   return (
     <div className='product-card'>
-      <Link to='/#' className='product-item product-item--list'>
+      <Link
+        to={`/game/${_id}/${slug}`}
+        className='product-item product-item--list'
+      >
         <div className='product-img-container'>
           <div
             className='product-img'
