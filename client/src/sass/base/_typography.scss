@@ -1,0 +1,77 @@
+body {
+  font-family: $primary-font-family;
+  color: $black;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    color: $black;
+    text-decoration: none !important;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  border: none;
+  background-color: transparent;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+select option:checked,
+select option:hover {
+  -webkit-box-shadow: 0 0 10px 100px #000 inset;
+  box-shadow: 0 0 10px 100px #000 inset;
+  background-color: transparent !important;
+}
+
+textarea {
+  resize: none;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+table {
+  width: 100%;
+}
