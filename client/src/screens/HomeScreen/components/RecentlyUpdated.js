@@ -3,22 +3,23 @@ import Spinner from '../../../components/Spinner/Spinner';
 import ProductItemGridView from '../../../components/ProductItem/ProductItemGridView';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { shuffleArray } from '../../../utils/utils';
 import { useTranslation } from 'react-i18next';
 
-const GamesOnSale = ({ pending, gamesOnSale }) => {
+const RecentlyUpdated = ({ pending, products }) => {
   const { t } = useTranslation();
 
   return pending ? (
-    <section className='games-on-sale'>
+    <section className='recently-updated'>
       <div className='container'>
-        <h1 className='title'>{t('gamesOnSale')}</h1>
+        <h1 className='title'>{t('recentlyUpdated')}</h1>
         <Spinner />
       </div>
     </section>
   ) : (
-    <section className='games-on-sale'>
+    <section className='recently-updated'>
       <div className='container'>
-        <h1 className='title'>{t('gamesOnSale')}</h1>
+        <h1 className='title'>{t('recentlyUpdated')}</h1>
         <Carousel
           swipeable={false}
           draggable={false}
@@ -30,7 +31,7 @@ const GamesOnSale = ({ pending, gamesOnSale }) => {
           transitionDuration={500}
           containerClass='carousel-container'
         >
-          {gamesOnSale.map((item, index) => {
+          {shuffleArray(products).map((item, index) => {
             return <ProductItemGridView product={item} key={index} />;
           })}
         </Carousel>
@@ -54,4 +55,4 @@ const responsive = {
   },
 };
 
-export default GamesOnSale;
+export default RecentlyUpdated;

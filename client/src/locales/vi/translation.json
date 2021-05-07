@@ -12,7 +12,7 @@
     "rpg": "RPG",
     "shooters": "Bắn súng",
     "simulation": "Mô phỏng",
-    "sportsRacing": "Thể thao & Đua xe",
+    "sportsracing": "Thể thao & Đua xe",
     "strategy": "Chiến lược"
   },
   "browseAllGames": "Khám phá tất cả trò chơi",
@@ -25,6 +25,9 @@
   "newReleases": "Mới ra mắt",
   "topSeller": "Bán chạy nhất",
   "comingSoon": "Sắp ra",
+  "recentlyUpdated": "Cập nhật gần đây",
+  "recommendForYou": "Gợi ý cho bạn",
+  "availableOn": "Có sẵn trên:",
   "addToCart": "Thêm vào giỏ",
   "language": "Ngôn ngữ:",
   "legal": "Tính pháp lý",

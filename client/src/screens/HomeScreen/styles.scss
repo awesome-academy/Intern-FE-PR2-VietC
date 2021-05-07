@@ -1,6 +1,10 @@
 @import '../../sass/utilities/variables';
 @import '../../sass/utilities/mixins';
 
+section:not(:first-of-type) {
+  @include padding-y(1rem, 1.5rem);
+}
+
 .hero {
   .hero-img {
     position: relative;
@@ -85,13 +89,8 @@
   }
 }
 
-.games-on-sale {
-  @include padding-y(1rem, 1.5rem);
-}
-
 .new-and-trending {
   overflow: auto;
-  @include padding-y(1rem, 1.5rem);
 
   .top-list {
     min-width: 960px;
@@ -103,6 +102,84 @@
 
       h2 {
         @include text-capitalize(1.3rem, 400);
+      }
+    }
+  }
+}
+
+.discover-games {
+  .row {
+    @include respond-to('medium') {
+      gap: 1.5rem;
+    }
+
+    .discover-item {
+      display: block;
+      color: $white;
+      background-color: rgba(255, 255, 255, 0.06);
+      border-radius: 5px;
+      overflow: hidden;
+      @include transition-easeinout(0.25s);
+
+      .discover-img-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 56.25%;
+
+        .discover-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+        }
+      }
+
+      .discover-text {
+        padding: 1rem 1.2rem;
+        @include flex(inherit, flex-start, column, 0.8rem);
+
+        .discover-name {
+          letter-spacing: 1px;
+          @include text-capitalize(calc(1.1rem + 0.3vw), 700);
+        }
+
+        .discover-platforms {
+          @include flex(inherit, center, row, 0.5rem);
+
+          span {
+            font-size: 1.1rem;
+          }
+        }
+
+        .discover-price {
+          @include flex(inherit, center, row, 0.7rem);
+
+          .discover-discount {
+            background-color: $purple;
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-weight: 700;
+          }
+
+          .new-price {
+            font-size: 1.2rem;
+          }
+
+          .old-price {
+            color: $gray;
+            font-size: 0.9rem;
+            text-decoration: line-through;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.15);
       }
     }
   }

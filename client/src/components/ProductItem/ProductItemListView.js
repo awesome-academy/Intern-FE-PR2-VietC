@@ -33,6 +33,9 @@ const ProductItemListView = ({ product }) => {
           )}
         </div>
       </Link>
+      <button className='product-icon'>
+        <i className='ei ei-icon_cart_alt'></i>
+      </button>
     </div>
   );
 };

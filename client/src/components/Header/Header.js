@@ -81,7 +81,7 @@ const navbarItems = [
         path: '/#',
       },
       {
-        label: 'sportsRacing',
+        label: 'sportsracing',
         path: '/#',
       },
       {
