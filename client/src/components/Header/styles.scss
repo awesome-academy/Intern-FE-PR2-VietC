@@ -34,6 +34,7 @@
             @include box-shadow(0, 10px);
 
             h1 {
+              color: $black;
               @include text-uppercase(0.9rem, 600);
             }
 

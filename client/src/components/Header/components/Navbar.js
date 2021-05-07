@@ -39,7 +39,7 @@ const Navbar = ({ navbarItems }) => {
                       );
                     })}
                   </div>
-                  <h1>{t('browserAllGames')}</h1>
+                  <h1>{t('browseAllGames')}</h1>
                   <div className='menu-collection'>
                     <div className='row'>
                       <div className='col-4'>

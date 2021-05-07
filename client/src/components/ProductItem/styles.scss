@@ -1,0 +1,142 @@
+@import '../../sass/utilities/variables';
+@import '../../sass/utilities/mixins';
+
+.product-card {
+  .product-item {
+    display: block;
+    position: relative;
+
+    .product-img-container {
+      position: relative;
+      height: 0;
+      border-radius: 4px;
+      overflow: hidden;
+
+      .product-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 0;
+          background-color: rgba(255, 255, 255, 0.1);
+          @include transition-easeinout(0.15s);
+        }
+
+        &:hover {
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .product-name,
+    .product-genres {
+      @include line-limit(1);
+    }
+
+    .product-name {
+      color: $white;
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .product-genres {
+      color: $gray;
+      margin-bottom: 0.8rem;
+
+      .product-genre {
+        font-size: 0.9rem;
+
+        &:not(:last-of-type) {
+          &:after {
+            content: '|';
+            padding: 0 0.3rem;
+          }
+        }
+      }
+    }
+
+    .product-price {
+      @include flex(inherit, center, row, 0.7rem);
+
+      .prices {
+        @include flex(inherit, center, row, 0.7rem);
+      }
+
+      .new-price {
+        color: $white;
+        font-size: 1rem;
+      }
+
+      .old-price {
+        color: $gray;
+        font-size: 0.9rem;
+        text-decoration: line-through;
+      }
+
+      .product-discount {
+        background-color: $purple;
+        color: $white;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 0.7rem;
+        font-weight: 700;
+      }
+    }
+
+    &--grid {
+      padding: 0 0.7rem;
+      @include flex(inherit, inherit, column);
+
+      .product-img-container {
+        position: relative;
+        width: 100%;
+        padding-top: 140%;
+      }
+
+      .product-text {
+        padding-top: 1.2rem;
+
+        .product-price {
+          @include respond-to('medium') {
+            @include flex(space-between, center, row);
+          }
+
+          .prices {
+            @include respond-to('medium') {
+              @include flex(inherit, inherit, column, 0.1rem);
+            }
+          }
+        }
+      }
+    }
+
+    &--list {
+      padding: 0.7rem 0;
+      @include flex(inherit, center, row, 1rem);
+
+      .product-img-container {
+        width: 60px;
+        padding-top: 80px;
+      }
+
+      .product-name {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
