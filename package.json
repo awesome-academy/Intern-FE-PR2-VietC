@@ -8,7 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server/index",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "nodemon server/seeder",
+    "data:destroy": "nodemon server/seeder -d"
   },
   "repository": {
     "type": "git",
@@ -26,7 +28,9 @@
     "body-parser": "^1.19.0",
     "concurrently": "^6.0.2",
     "cors": "^2.8.5",
+    "dotenv": "^9.0.0",
     "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
     "mongoose": "^5.12.7"
   }
 }
