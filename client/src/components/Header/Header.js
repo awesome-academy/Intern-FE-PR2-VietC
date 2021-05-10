@@ -55,6 +55,41 @@ const navbarItems = [
   {
     label: 'Store',
     path: '/products',
+    submenuItems: [
+      {
+        label: 'Action',
+        path: '/#',
+      },
+      {
+        label: 'Adventure',
+        path: '/#',
+      },
+      {
+        label: 'Indie',
+        path: '/#',
+      },
+      {
+        label: 'RPG',
+        path: '/#',
+      },
+      {
+        label: 'Shooters',
+        path: '/#',
+      },
+      {
+        label: 'Simulation',
+        path: '/#',
+      },
+      {
+        label: 'Sports & Racing',
+        path: '/#',
+      },
+      {
+        label: 'Strategy',
+        path: '/#',
+      },
+    ],
+    hasSubmenu: true,
   },
   {
     label: 'About',
