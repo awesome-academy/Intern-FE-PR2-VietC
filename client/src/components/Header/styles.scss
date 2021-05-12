@@ -3,6 +3,7 @@
 
 .header {
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   width: 100%;
@@ -52,7 +53,7 @@
                 box-shadow: 0 0px 6px rgba(0, 0, 0, 0.3);
 
                 p {
-                  font-size: 0.9rem;
+                  font-size: 0.85rem;
                   font-weight: 600;
                   padding: 3px 8px;
                 }

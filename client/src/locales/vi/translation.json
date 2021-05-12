@@ -1,3 +1,28 @@
 {
-  "language": "Ngôn ngữ:"
+  "home": "Trang chủ",
+  "store": "Cửa hàng",
+  "about": "Về chúng tôi",
+  "contact": "Liên hệ",
+  "support": "Hỗ trợ",
+  "allCategories": "Tất cả thể loại",
+  "categories": {
+    "action": "Hành động",
+    "adventure": "Phiêu lưu",
+    "indie": "Độc lập",
+    "rpg": "RPG",
+    "shooters": "Bắn súng",
+    "simulation": "Mô phỏng",
+    "sportsRacing": "Thể thao & Đua xe",
+    "strategy": "Chiến lược"
+  },
+  "browserAllGames": "Khám phá tất cả trò chơi",
+  "allGamesForWindows": "Tất cả game dành cho Windows",
+  "allGamesForMac": "Tất cả game dành cho Mac",
+  "allGamesForLinux": "Tất cả game dành cho Linux",
+  "heroText": "Khám phá danh mục của chúng tôi cho trò chơi yêu thích tiếp theo của bạn!",
+  "language": "Ngôn ngữ:",
+  "legal": "Tính pháp lý",
+  "terms": "Điều khoản sử dụng",
+  "privacyPolicy": "Chính sách bảo mật",
+  "cookiePolicy": "Chính sách Cookie"
 }

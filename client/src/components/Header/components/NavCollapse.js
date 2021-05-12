@@ -1,7 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const NavCollapse = ({ isCollapse, navbarItems }) => {
+  const { t } = useTranslation();
+
   return (
     <div className='d-block d-md-none'>
       <ul className={`nav-collapse ${isCollapse ? '' : 'active'}`}>
@@ -15,7 +18,7 @@ const NavCollapse = ({ isCollapse, navbarItems }) => {
                 className='menu-link'
                 activeClassName='active'
               >
-                {label}
+                {t(label)}
               </NavLink>
             </li>
           );

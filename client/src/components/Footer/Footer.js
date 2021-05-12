@@ -55,7 +55,7 @@ const Footer = () => {
             const { label, path } = item;
             return (
               <li className='footer-link' key={index}>
-                <Link to={path}>{label}</Link>
+                <Link to={path}>{t(label)}</Link>
               </li>
             );
           })}
@@ -102,23 +102,23 @@ const socials = [
 
 const footerLinks = [
   {
-    label: 'Legal',
+    label: 'legal',
     path: '/#',
   },
   {
-    label: 'Terms of use',
+    label: 'terms',
     path: '/#',
   },
   {
-    label: 'Privacy policy',
+    label: 'privacyPolicy',
     path: '/#',
   },
   {
-    label: 'Cookie policy',
+    label: 'cookiePolicy',
     path: '/#',
   },
   {
-    label: 'Support',
+    label: 'support',
     path: '/#',
   },
 ];

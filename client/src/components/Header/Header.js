@@ -49,58 +49,58 @@ const Header = () => {
 
 const navbarItems = [
   {
-    label: 'Home',
+    label: 'home',
     path: '/',
   },
   {
-    label: 'Store',
+    label: 'store',
     path: '/products',
     submenuItems: [
       {
-        label: 'Action',
+        label: 'action',
         path: '/#',
       },
       {
-        label: 'Adventure',
+        label: 'adventure',
         path: '/#',
       },
       {
-        label: 'Indie',
+        label: 'indie',
         path: '/#',
       },
       {
-        label: 'RPG',
+        label: 'rpg',
         path: '/#',
       },
       {
-        label: 'Shooters',
+        label: 'shooters',
         path: '/#',
       },
       {
-        label: 'Simulation',
+        label: 'simulation',
         path: '/#',
       },
       {
-        label: 'Sports & Racing',
+        label: 'sportsRacing',
         path: '/#',
       },
       {
-        label: 'Strategy',
+        label: 'strategy',
         path: '/#',
       },
     ],
     hasSubmenu: true,
   },
   {
-    label: 'About',
+    label: 'about',
     path: '/about',
   },
   {
-    label: 'Support',
+    label: 'support',
     path: '/support',
   },
   {
-    label: 'Contact',
+    label: 'contact',
     path: '/contact',
   },
 ];

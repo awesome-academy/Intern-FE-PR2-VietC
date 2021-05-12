@@ -12,5 +12,12 @@
 }
 
 .main-content {
-  padding-top: 63px;
+  padding-top: 61px;
+}
+
+.title {
+  color: $white;
+  letter-spacing: 0.5px;
+  @include text-capitalize(1.15rem, 700);
+  @include padding-y(0.5rem, 1rem);
 }

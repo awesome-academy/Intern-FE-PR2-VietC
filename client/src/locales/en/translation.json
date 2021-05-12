@@ -1,3 +1,28 @@
 {
-  "language": "Language:"
+  "home": "Home",
+  "store": "Store",
+  "about": "About",
+  "contact": "Contact",
+  "support": "Support",
+  "allCategories": "All Categories",
+  "categories": {
+    "action": "Action",
+    "adventure": "Adventure",
+    "indie": "Indie",
+    "rpg": "RPG",
+    "shooters": "Shooters",
+    "simulation": "Simulation",
+    "sportsRacing": "Sports & Racing",
+    "strategy": "Strategy"
+  },
+  "browserAllGames": "Browser All Games",
+  "allGamesForWindows": "All Games For Windows",
+  "allGamesForMac": "All Games For Mac",
+  "allGamesForLinux": "All Games For Linux",
+  "heroText": "Explore our catalog for your next favorite game!",
+  "language": "Language:",
+  "legal": "Legal",
+  "terms": "Terms of use",
+  "privacyPolicy": "Privacy policy",
+  "cookiePolicy": "Cookie policy"
 }

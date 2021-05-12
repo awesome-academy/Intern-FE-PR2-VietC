@@ -1,0 +1,11 @@
+.btn-primary {
+  background-color: $light-purple;
+  padding: 0.5rem 1.2rem;
+  @include text-uppercase(1rem, 500);
+  @include border(1px, $purple);
+
+  &:hover {
+    background-color: $purple;
+    @include border(1px, $purple);
+  }
+}
