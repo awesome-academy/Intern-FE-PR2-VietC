@@ -26,7 +26,7 @@
 
   .hero-genres {
     background-color: $black;
-    padding: 0 1rem;
+    @include padding-y(1rem, 1.5rem);
 
     .genre-list {
       white-space: nowrap;
@@ -36,7 +36,7 @@
       .genre-item {
         display: inline-block;
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.13);
+        background-color: rgba(255, 255, 255, 0.06);
         padding: 1rem;
         cursor: pointer;
         @include square(140px, 12px);
@@ -80,6 +80,29 @@
         &:hover {
           background-color: $dark-gray;
         }
+      }
+    }
+  }
+}
+
+.games-on-sale {
+  @include padding-y(1rem, 1.5rem);
+}
+
+.new-and-trending {
+  overflow: auto;
+  @include padding-y(1rem, 1.5rem);
+
+  .top-list {
+    min-width: 960px;
+
+    .list-item {
+      background-color: rgba(255, 255, 255, 0.06);
+      border-radius: 7px;
+      padding: 1rem 1.3rem;
+
+      h2 {
+        @include text-capitalize(1.3rem, 400);
       }
     }
   }

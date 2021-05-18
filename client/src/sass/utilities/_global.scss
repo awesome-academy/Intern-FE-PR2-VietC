@@ -21,3 +21,8 @@
   @include text-capitalize(1.15rem, 700);
   @include padding-y(0.5rem, 1rem);
 }
+
+.carousel-container {
+  margin-left: -0.7rem;
+  margin-right: -0.7rem;
+}

@@ -11,13 +11,13 @@ const Hero = () => {
         <div className='hero-text'>
           <p className='pb-2'>{t('heroText')}</p>
           <Link className='btn btn-primary' to='/products'>
-            {t('browserAllGames')}
+            {t('browseAllGames')}
           </Link>
         </div>
       </div>
       <div className='hero-genres'>
         <div className='container'>
-          <div className='title'>Browser Genres</div>
+          <div className='title'>{t('browseGenres')}</div>
           <div className='genre-list'>
             {genres.map((item, index) => {
               const { label, img } = item;
