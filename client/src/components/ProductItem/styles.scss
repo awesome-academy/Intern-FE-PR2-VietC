@@ -2,6 +2,8 @@
 @import '../../sass/utilities/mixins';
 
 .product-card {
+  position: relative;
+
   .product-item {
     display: block;
     position: relative;
@@ -71,10 +73,10 @@
     }
 
     .product-price {
-      @include flex(inherit, center, row, 0.7rem);
+      @include flex(inherit, center, row, 0.5rem);
 
       .prices {
-        @include flex(inherit, center, row, 0.7rem);
+        @include flex(inherit, center, row, 0.5rem);
       }
 
       .new-price {
@@ -84,14 +86,14 @@
 
       .old-price {
         color: $gray;
-        font-size: 0.9rem;
+        font-size: 0.75rem;
         text-decoration: line-through;
       }
 
       .product-discount {
         background-color: $purple;
         color: $white;
-        padding: 5px 10px;
+        padding: 3px 7px;
         border-radius: 3px;
         font-size: 0.7rem;
         font-weight: 700;
@@ -118,10 +120,15 @@
 
           .prices {
             @include respond-to('medium') {
-              @include flex(inherit, inherit, column, 0.1rem);
+              @include flex(inherit, flex-start, column, 0.1rem);
             }
           }
         }
+      }
+
+      & ~ .product-icon {
+        top: 0.5rem;
+        right: 1.3rem;
       }
     }
 
@@ -137,6 +144,25 @@
       .product-name {
         margin-bottom: 0.5rem;
       }
+
+      & ~ .product-icon {
+        top: 51%;
+        right: 0;
+      }
     }
+  }
+
+  .product-icon {
+    position: absolute;
+    color: $white;
+    background-color: $green;
+    padding: 0 10px;
+    border-radius: 3px;
+    @include hidden;
+    @include transition-easeinout(0.25s);
+  }
+
+  &:hover .product-icon {
+    @include visible;
   }
 }

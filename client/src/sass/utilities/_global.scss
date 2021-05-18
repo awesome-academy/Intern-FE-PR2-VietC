@@ -25,4 +25,12 @@
 .carousel-container {
   margin-left: -0.7rem;
   margin-right: -0.7rem;
+
+  .react-multiple-carousel__arrow--left {
+    left: calc(1% + 0.5rem);
+  }
+
+  .react-multiple-carousel__arrow--right {
+    right: calc(1% + 0.5rem);
+  }
 }

@@ -12,7 +12,7 @@
     "rpg": "RPG",
     "shooters": "Shooters",
     "simulation": "Simulation",
-    "sportsRacing": "Sports & Racing",
+    "sportsracing": "Sports & Racing",
     "strategy": "Strategy"
   },
   "browseAllGames": "Browse All Games",
@@ -26,6 +26,9 @@
   "newReleases": "New releases",
   "topSeller": "Top seller",
   "comingSoon": "Coming soon",
+  "recentlyUpdated": "Recently Updated",
+  "recommendForYou": "Recommend for you",
+  "availableOn": "Available on:",
   "addToCart": "Add to cart",
   "language": "Language:",
   "legal": "Legal",

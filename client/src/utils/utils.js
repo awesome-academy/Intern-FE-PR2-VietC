@@ -8,3 +8,16 @@ export const shuffleArray = (array, num) => {
   }
   return array.slice(0, num);
 };
+
+export const changePlatform = (platform) => {
+  switch (platform) {
+    case 'PC':
+      return 'windows';
+    case 'Mac':
+      return 'apple';
+    case 'Linux':
+      return 'linux';
+    default:
+      return;
+  }
+};
