@@ -1,0 +1,40 @@
+@import '../../sass/utilities/variables';
+@import '../../sass/utilities/mixins';
+
+.accordion {
+  .accordion-header {
+    h2 {
+      white-space: nowrap;
+      @include line-limit(1);
+
+      button {
+        color: $white;
+        padding: 0.2rem 0;
+        border-radius: 0;
+        @include text-capitalize(1.1rem, 700);
+        @include flex(space-between, center, row);
+
+        i {
+          font-size: 1.5rem;
+          margin-right: -5px;
+          @include transition-easeinout(0.25s);
+        }
+
+        &.active {
+          i {
+            @include transform-rotate(-180deg);
+          }
+        }
+      }
+    }
+  }
+
+  .accordion-content {
+    overflow: hidden;
+    @include border-bottom(1px, $gray);
+
+    .accordion-body {
+      @include padding-y(0.2rem, 1rem);
+    }
+  }
+}

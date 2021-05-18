@@ -1,0 +1,103 @@
+@import '../../sass/utilities/variables';
+@import '../../sass/utilities/mixins';
+
+.dropdown {
+  position: relative;
+
+  .dropdown-trigger {
+    color: $white;
+    white-space: nowrap;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 130%;
+    min-width: 100%;
+    background-color: $white;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    @include border(1px, $gray);
+
+    .dropdown-item {
+      cursor: pointer;
+      padding: 0.4rem 1rem;
+
+      .checkmark-item {
+        label {
+          display: block;
+          font-size: 0.95rem;
+          padding-left: 30px;
+
+          .checkmark {
+            left: 2px;
+            @include border(1px, $gray);
+            @include square(1rem, 3px);
+          }
+        }
+      }
+
+      &:hover,
+      &:active {
+        background-color: $light-gray;
+        color: $black;
+      }
+
+      &:first-of-type {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+      }
+
+      &:last-of-type {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+    }
+
+    &.active {
+      display: block;
+      -webkit-animation: showDropdown 0.2s forwards;
+      animation: showDropdown 0.2s forwards;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: -14px;
+      width: 0;
+      height: 0;
+      @include border-top(8px, transparent);
+      @include border-bottom(8px, $white);
+      @include border-left(8px, transparent);
+      @include border-right(8px, transparent);
+    }
+  }
+}
+
+@-webkit-keyframes showDropdown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes showDropdown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

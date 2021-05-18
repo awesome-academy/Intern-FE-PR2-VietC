@@ -6,6 +6,7 @@
   "support": "Support",
   "allCategories": "All Categories",
   "categories": {
+    "allGames": "All games",
     "action": "Action",
     "adventure": "Adventure",
     "indie": "Indie",
@@ -14,6 +15,52 @@
     "simulation": "Simulation",
     "sportsracing": "Sports & Racing",
     "strategy": "Strategy"
+  },
+  "searchFor": "Search for",
+  "filters": {
+    "filter": "Filter",
+    "price": {
+      "price": "Price",
+      "u5": "Under $5",
+      "u15": "Under $15",
+      "u25": "Under $25",
+      "u50": "Under $50",
+      "a50": "$50+",
+      "discounted": "Discounted"
+    },
+    "system": {
+      "system": "System",
+      "windows": "Windows",
+      "mac": "MacOS",
+      "linux": "Linux"
+    },
+    "features": {
+      "features": "Features",
+      "single": "Single Player",
+      "multi": "Mutiplayer",
+      "atmospheric": "Atmospheric",
+      "full_controller": "Full Controller Support",
+      "great_soundtrack": "Great Soundtrack",
+      "coop": "Co-op",
+      "open_world": "Open World",
+      "sandbox": "Sandbox",
+      "story_rich": "Story Rich",
+      "scifi": "Sci-fi",
+      "fps": "FPS",
+      "horror": "Horror",
+      "2d": "2D",
+      "partial_support": "Partial Controller Support",
+      "turn_based": "Turn Based"
+    }
+  },
+  "sorts": {
+    "sortBy": "Sort by:",
+    "dateAdded": "Date added",
+    "alphabetically": "Alphabetically",
+    "bestSelling": "Best selling",
+    "userRating": "User rating",
+    "ascending": "Ascending",
+    "descending": "Descending"
   },
   "browseAllGames": "Browse All Games",
   "allGamesForWindows": "All Games For Windows",
