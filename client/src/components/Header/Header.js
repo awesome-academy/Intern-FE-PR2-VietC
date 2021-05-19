@@ -54,7 +54,7 @@ const navbarItems = [
   },
   {
     label: 'store',
-    path: '/products',
+    path: '/games',
     submenuItems: [
       {
         label: 'action',

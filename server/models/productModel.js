@@ -59,6 +59,56 @@ const productSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    pc_requiments: {
+      minimum: {
+        type: String,
+        required: true,
+      },
+      recommended: {
+        type: String,
+        required: true,
+      },
+    },
+    mac_requiments: {
+      minimum: {
+        type: String,
+        required: true,
+      },
+      recommended: {
+        type: String,
+        required: true,
+      },
+    },
+    linux_requiments: {
+      minimum: {
+        type: String,
+        required: true,
+      },
+      recommended: {
+        type: String,
+        required: true,
+      },
+    },
+    developer: {
+      type: String,
+      required: true,
+    },
+    publisher: {
+      type: String,
+      required: true,
+    },
+    detailed_description: {
+      type: String,
+      required: true,
+    },
+    short_description: {
+      type: String,
+      required: true,
+    },
+    supported_languages: {
+      type: String,
+      required: true,
+    },
     rating: {
       type: Number,
       required: true,

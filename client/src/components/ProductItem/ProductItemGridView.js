@@ -4,12 +4,15 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const ProductItemGridView = ({ product }) => {
-  const { image, name, genres, newPrice, oldPrice } = product;
+  const { _id, slug, image, name, genres, newPrice, oldPrice } = product;
   const { t } = useTranslation();
 
   return (
     <div className='product-card'>
-      <Link to='/#' className='product-item product-item--grid'>
+      <Link
+        to={`/game/${_id}/${slug}`}
+        className='product-item product-item--grid'
+      >
         <div className='product-img-container'>
           <div
             className='product-img'

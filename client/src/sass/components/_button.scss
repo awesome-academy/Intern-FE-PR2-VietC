@@ -1,11 +1,33 @@
 .btn-primary {
-  background-color: $light-purple;
+  background-color: $purple;
   padding: 0.5rem 1.2rem;
   @include text-uppercase(1rem, 500);
   @include border(1px, $purple);
+  @include transition-easeinout(0.25s);
 
   &:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
     background-color: $purple;
     @include border(1px, $purple);
+  }
+}
+
+.btn-expand {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: $white;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  @include flex(center, center, row, 0.3rem);
+  @include text-uppercase(1rem, 400);
+  @include transition-easeinout(0.25s);
+
+  i {
+    font-size: 1.3rem;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+    color: $white;
   }
 }

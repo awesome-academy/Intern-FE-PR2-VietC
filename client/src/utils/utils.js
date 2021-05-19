@@ -11,13 +11,17 @@ export const shuffleArray = (array, num) => {
 
 export const changePlatform = (platform) => {
   switch (platform) {
-    case 'PC':
+    case 'Windows':
       return 'windows';
-    case 'Mac':
+    case 'Mac OS':
       return 'apple';
     case 'Linux':
       return 'linux';
     default:
       return;
   }
+};
+
+export const convertDate = (date) => {
+  if (date) return date.split('-').reverse().join('-');
 };

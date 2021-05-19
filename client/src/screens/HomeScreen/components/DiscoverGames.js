@@ -11,10 +11,18 @@ const DiscoverGames = ({ discoverGames }) => {
       <div className='container'>
         <div className='row'>
           {discoverGames.map((item, index) => {
-            const { image, name, platforms, newPrice, oldPrice } = item;
+            const {
+              _id,
+              slug,
+              image,
+              name,
+              platforms,
+              newPrice,
+              oldPrice,
+            } = item;
             return (
               <div className='col-md-6' key={index}>
-                <Link to='/#' className='discover-item'>
+                <Link to={`/game/${_id}/${slug}`} className='discover-item'>
                   <div className='discover-img-container'>
                     <div
                       className='discover-img'
